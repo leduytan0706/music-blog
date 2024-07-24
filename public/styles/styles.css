@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+main{
+    padding: 20px;
+    height: auto;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/007/935/202/non_2x/seamless-pattern-background-for-theme-music-vector.jpg);
+    background-size: contain;
+}
+
+
+
+#create-form{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(#969aa4 20%, #302820);
+    border-radius: 20px;
+    opacity: 0.99;
+}
+
+#create-form input, label, textarea{
+    margin: 5px;
+}
+
+#create-form input[type="submit"]{
+    text-align: center;
+}
+
+#posts{
+    padding-top: 50px;
+}
+
+#post-detail{
+    margin: auto;
+    width: 70%;
+    height: 550px;
+    padding: 50px;
+    background-color: #3C4041;
+    color: white;
+    border-radius: 20px;
+}
+
+.post{
+    background: linear-gradient(#E8E8E8,#FFF8F3);
+    height: auto;
+    border: 10px solid transparent;
+    background-clip: padding-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    opacity: 0.95;
+}
+
+.interaction{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+}
+

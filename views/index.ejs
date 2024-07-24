@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="container" id="posts">
+    <!-- Example row of columns -->
+    <div class="row" >
+        <% blog_data.forEach((post) =>{ %>
+        <div class="col-sm-6 col-md-4 post">
+            
+            <h2><%= post["title"] %></h2>
+            <p>
+                <%  var maxLength = 147 ; 
+                    var result = post["content"].substring(0, maxLength) + '...'; %>
+                <%= result %>
+            </p>
+            <div class="interaction">
+                <p><a class="btn btn-secondary" href="/post_detail?id=<%=blog_data.indexOf(post)%>" role="button">View</a></p>
+                <p><a class="btn btn-secondary" href="/edit?id=<%=blog_data.indexOf(post)%>" role="button">Edit</a></p>
+                <p><a class="btn btn-secondary" href="/delete?id=<%=blog_data.indexOf(post)%>" role="button">Delete</a></p>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+
+    <hr>
+
+  </div>
+
+      
+<%- include("partials/footer.ejs"); %>

@@ -1,0 +1,7 @@
+<%- include("partials/header.ejs"); %>
+<div class="blog-post" id="post-detail">
+    <h2 class="blog-post-title"><%= post["title"]; %></h2>
+    <p class="blog-post-meta"><%= post["date"] %></p>
+    <p><%= post["content"] %></p>
+</div>
+<%- include("partials/footer.ejs"); %>
